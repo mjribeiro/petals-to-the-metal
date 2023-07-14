@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:latest-gpu-jupyter
+FROM gcr.io/kaggle-gpu-images/python
 
 ARG USERNAME=vscode
 ARG USER_UID=1000
