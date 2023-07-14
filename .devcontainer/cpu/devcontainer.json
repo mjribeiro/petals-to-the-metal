@@ -1,0 +1,20 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-dockerfile
+{
+	"name": "CPU Only",
+	"build": {
+		"context": "../..",
+		"dockerfile": "../Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-toolsai.jupyter",
+				"ms-python.python"
+			]
+		}
+	},
+	"mounts": [
+		"source=${localEnv:HOME}/data/petals-to-the-metal,target=/kaggle/input/tpu-getting-started,type=bind,consistency=cached"
+	]
+}
